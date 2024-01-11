@@ -5,7 +5,6 @@ import {MatInputModule} from "@angular/material/input";
 import {NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {MatButtonModule} from "@angular/material/button";
-import {ApiService} from "../api.service";
 import {HttpClientModule} from "@angular/common/http";
 
 @Component({
