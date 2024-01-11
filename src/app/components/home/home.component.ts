@@ -27,23 +27,23 @@ export class HomeComponent {
 V2X = "../assets/images/V2X_Color.png"
   backgroundColor = true;
 
-  loginData = { email: '', password: '' };
-
-  constructor(private apiService: ApiService) { }
-
-  onLogin() {
-    if (this.loginData.email && this.loginData.password) {
-      this.apiService.login(this.loginData)
-        .subscribe({
-        next: (response) => {
-          console.log('Login successful');
-          // Handle successful login here
-        },
-        error: (error) => {
-          console.error('Login failed');
-          // Handle login error here
-        }
-      });
-    }
-  }
+  // loginData = { email: '', password: '' };
+  //
+  // constructor(private apiService: ApiService) { }
+  //
+  // onLogin() {
+  //   if (this.loginData.email && this.loginData.password) {
+  //     this.apiService.login(this.loginData)
+  //       .subscribe({
+  //       next: (response) => {
+  //         console.log('Login successful');
+  //         // Handle successful login here
+  //       },
+  //       error: (error) => {
+  //         console.error('Login failed');
+  //         // Handle login error here
+  //       }
+  //     });
+  //   }
+  // }
 }
