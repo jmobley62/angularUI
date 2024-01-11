@@ -1,0 +1,21 @@
+<img [ngSrc]="V2X" [alt]="V2X" [width]="250" [height]="200" class="mt-6" />
+
+<ng-form class="loginInput" >
+  <mat-form-field appearance="fill" >
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Full.Name@gov2x.com"  name="email" required>
+    <mat-icon class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" matSuffix>person</mat-icon>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="8-16 Characters"  name="password" type="password" required>
+    <mat-icon class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" matSuffix>lock</mat-icon>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit" [style.background-Color]="backgroundColor ? '#061C3D' : 'black'" [style.color]="backgroundColor ? 'white' : 'green'">
+    <mat-icon class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" matSuffix>key</mat-icon>
+  </button>
+</ng-form>
